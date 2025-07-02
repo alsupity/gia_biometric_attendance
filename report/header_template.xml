@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="external_layout_gia">
+        <t t-call="web.html_container">
+            <div class="header o_company_default_layout" t-att-style="report_header_style">
+                <div class="text-center d-flex flex-row align-items-center justify-content-between">
+                    <div>
+                        <div>
+                            <h5>الجمهورية اليمنية</h5>
+                        </div>
+                        <div>
+                            <h6>وزارة الاقتصاد والتجارة والإستثمار</h6>
+                        </div>
+                        <div>
+                            <h6>الهيئة العامة للإستثمار</h6>
+                        </div>
+                    </div>
+                    <div class="mx-5" style="width: 170px;">
+                        <img class="w-100 h-auto" src="/gia_biometric_attendance/static/img/Emblem_of_Yemen.svg"
+                             alt="الطير اليمني"/>
+                    </div>
+                    <div>
+                        <div>
+                            <h5>Republic of Yemen</h5>
+                        </div>
+                        <div>
+                            <h6>Ministry of Economy, Trade and Investment</h6>
+                        </div>
+                        <div>
+                            <h6>General Investment Authority</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </t>
+    </template>
+</odoo>

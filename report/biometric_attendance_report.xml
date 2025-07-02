@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_biometric_attendance_report" model="ir.actions.report">
+        <field name="name">Biometric Attendance Report</field>
+        <field name="model">gia.biometric.attendance</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">gia_biometric_attendance.report_biometric_attendance_document</field>
+        <field name="paperformat_id" ref="gia_biometric_attendance.paperformat_custom"/>
+    </record>
+</odoo>

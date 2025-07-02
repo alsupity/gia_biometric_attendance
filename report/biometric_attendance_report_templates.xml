@@ -1,0 +1,36 @@
+<odoo>
+    <template id="report_biometric_attendance_document">
+        <t t-call="gia_biometric_attendance.external_layout_gia">
+            <link rel="stylesheet" href="/gia_biometric_attendance/static/src/css/decree_report.css"/>
+                <div class="page">
+                    <h2 class="text-center">تقرير الحضور</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>الموظف</th>
+                                <th>رقم الجهاز</th>
+                                <th>وقت البصمة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="o">
+                                <tr>
+                                    <td>
+                                        <t t-esc="o.employee_id.name"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="o.device_id_num"/>
+                                    </td>
+                                    <td>
+                                        <t t-esc="o.punching_time"/>
+                                    </td>
+
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+
+        </t>
+    </template>
+</odoo>
